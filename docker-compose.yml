@@ -1,0 +1,13 @@
+mongodb:
+    image: daocloud.io/library/mongo
+    container_name: mongodb
+    net: "host"
+    volumes:
+        - /data/jia360:/data/db
+tornado:
+    image: tornado
+    container_name: tornado-jia360
+    net: "host"
+    volumes:
+        - /data/jia360:/data/db
+        - /home/jsongo/dockerfile/mongodb/server:/app
