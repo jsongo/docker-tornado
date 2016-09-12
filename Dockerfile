@@ -1,1 +1,1 @@
-from daocloud.io/jsongo/tornado-base:latest
+from jsongo/tornado-base:latest
